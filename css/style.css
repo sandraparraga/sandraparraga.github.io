@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "Sprat";
+  src: url("SpratRegular.woff") format("woff"), url("SpratRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/*------------------ESTILO GENERALES------------------*/
+body {
+  /* background-color: #f46aed; */
+  background-color: #141414;
+  font-size: 40px;
+}
+
+.project-page-container {
+  margin: 7vh 16vw;
+}
+
+.block-centered {
+  display: block;
+  margin: auto auto;
+}
+
+.secondrow {
+  margin-top: 3vh;
+  padding-bottom: 7vh;
+}
+
+/*------------------TEXTOS------------------*/
+h1 {
+  font-family: Sprat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 108.8%;
+  text-align: center;
+  margin: 7vh 0 7vh 0;
+}
+
+h2 {
+  margin: 2vh 0;
+  font-family: Sprat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 108.8%;
+  text-align: center;
+  margin-bottom: 8vh;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.42em;
+  line-height: 1.4em;
+  text-align: center;
+}
+p span {
+  font-weight: 600;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.3em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 0.65em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 3vh;
+  margin-top: 5vh;
+}
+
+.full-width-text {
+  max-width: 75%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------------ABOUT------------------*/
+.about-text {
+  text-align: left;
+}
+
+.prueba {
+  text-align: left;
+}
+
+button,
+.button {
+  width: 170px;
+  padding: 5px;
+  border-radius: 1vw;
+  background-color: #f886e5;
+  margin-top: 5px;
+  height: 35px;
+}
+
+.img-about {
+  max-height: 450px;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.horizontal-about {
+  margin: 10vh 20vw;
+}
+
+/* 
+.tooltip {
+  position: relative;
+  display: inline-block;
+} */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #0540f2;
+  color: #fff;
+  text-align: center;
+  border-radius: 1vw;
+  padding: 5px;
+  /* position: absolute; */
+  z-index: 1;
+  left: 50%;
+  /* margin-left: -75px; */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-color: #0540f2 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+input {
+  border: none;
+  width: 190px;
+  color: white;
+  border-radius: 0.5vw;
+  background-color: transparent;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.3em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+/*------------------CURRÍCULUM------------------*/
+.doscolumnas {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 9%;
+  padding: 50px 20% 0 20%;
+}
+/* curriculum */
+h3 {
+  font-family: Sprat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.curriculum {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5em;
+  line-height: 1.4em;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+/*------------------MENÚ------------------*/
+
+.header {
+  position: fixed;
+  top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav-link {
+  margin: 5px 20px;
+  font-family: Sprat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  text-align: center;
+}
+.nav-link:hover,
+.visiting {
+  font-style: bold;
+  font-weight: bold;
+  font-weight: 600;
+}
+.next-project {
+  cursor: pointer;
+  margin: 5vh auto 5vh auto;
+  font-family: Sprat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  text-align: center;
+  display: block;
+}
+
+.horizontal-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*------------------CONTENEDORES home------------------*/
+.project-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  max-height: 40vh;
+  max-width: auto;
+  object-fit: cover;
+  margin: 5px 0;
+}
+
+#project-1 {
+  margin: 5px 10px 5px 170px;
+}
+#project-2 {
+  margin: 5px 170px 5px 10px;
+}
+.project-3 {
+  margin: 5px 10px;
+}
+
+/*------------------CONTENEDORES timesapp------------------*/
+.project-timesapp {
+  max-height: 430px;
+  max-width: auto;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.conv-captures {
+  max-width: 20vw;
+  border-radius: 40px;
+}
+
+.horizontal-app,
+.horizontal-timesapp,
+.horizontal-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.stickers {
+  width: 15vw;
+  height: auto;
+  padding: 10px;
+}
+
+.video-app {
+  padding: 5px;
+  width: 20vw;
+  height: auto;
+  border-radius: 5.5vh;
+}
+
+.video1 {
+  margin-right: 3vw;
+}
+.no-tengo-tiempo {
+  width: 20vw;
+  padding: 10px;
+  display: block;
+  margin: auto auto;
+}
+
+/*------------------CONTENEDORES ranaplaza------------------*/
+.ranaplaza-disaster {
+  max-height: 200px;
+  max-width: 400px;
+}
+.project-ranaplaza {
+  max-height: 500px;
+  max-width: 300px;
+  object-fit: cover;
+}
+.typo-img {
+  width: 60vw;
+  object-fit: cover;
+}
+.tipografia {
+  width: 55vw;
+}
+
+/*------------------LOGICAL------------------*/
+.logical-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/*------------------EMBRACING ERROR------------------*/
+.process {
+  height: 40vh;
+  padding: 5px;
+}
+
+.horizontal-ai {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.image-ai {
+  max-width: 40%;
+  object-fit: cover;
+  margin: 5px;
+}
+
+/*------------------BRUNZIT------------------*/
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: rgb(251, 255, 0);
+}
+.manifesto {
+  color: rgb(251, 255, 0);
+  width: 60%;
+  margin-top: 5vh;
+}
+.project-brunzit {
+  max-height: 500px;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+/*------------------SLIDESHOW------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.prev2,
+.next,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  margin-top: -22px;
+  padding: 16px;
+  transition: 0.6s ease;
+  background-color: none;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next,
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next:hover {
+  content: url("../assets/flecha-d-r.png");
+}
+.prev:hover {
+  content: url("../assets/flecha-i-r.png");
+}
+
+.next2:hover {
+  content: url("../assets/flecha-d-b.png");
+}
+
+.prev2:hover {
+  content: url("../assets/flecha-i-b.png");
+}
+
+/*------------------RESPONSIVE------------------*/
+@media (max-width: 1250px) {
+  .project-flex {
+    justify-content: space-around;
+  }
+  .project-image,
+  #project-1,
+  #project-2,
+  #project-3 {
+    margin: 10px;
+  }
+
+  /* curriculum */
+  .doscolumnas {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 1090px) {
+  .video-app {
+    border-radius: 4vh;
+  }
+
+  .manifesto {
+    width: 90%;
+  }
+  .horizontal-about {
+    flex-direction: column;
+    margin: 10vh 8vw;
+    width: 100%;
+  }
+}
+
+@media (max-width: 758px) {
+  /*----general----*/
+  .project-page-container {
+    margin: 13vh 2vw 3vh 2vw;
+  }
+
+  h1 {
+    font-size: 0.8em;
+    margin: 13vh 0 7vh 0;
+  }
+  h2 {
+    font-size: 0.9em;
+    margin: 13vh 0 7vh 0;
+  }
+  p {
+    font-size: 0.5em;
+  }
+  h4 {
+    font-size: 0.3em;
+  }
+
+  .horizontal-flex,
+  .horizontal-timesapp {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .full-width-text {
+    max-width: 90%;
+  }
+  /*----menu----*/
+  .nav-link {
+    font-size: 0.4em;
+  }
+  /*----index----*/
+  .secondrow {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  .project-image {
+    align-self: center;
+  }
+
+  /*----about----*/
+
+  .about-text {
+    max-width: 90%;
+    margin: 3vh auto 0 0;
+  }
+
+  .doscolumnas {
+    padding: 50px 8% 0 8%;
+  }
+
+  /*----rana plaza----*/
+  .project-ranaplaza {
+    margin: 0;
+    padding: 5px;
+    align-self: center;
+  }
+  .tipografia {
+    width: 90%;
+  }
+  .typo-img {
+    width: 90%;
+    object-fit: cover;
+  }
+
+  /*----embracing error----*/
+  .prev,
+  .prev2,
+  .next,
+  .next2 {
+    width: 30px;
+    padding: 5px;
+  }
+  .process {
+    height: 30vh;
+  }
+
+  /*----Time'sApp----*/
+  .video-app {
+    width: 40vw;
+    height: auto;
+    margin: auto;
+  }
+
+  .video1 {
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+  .stickers {
+    width: 25vw;
+  }
+  .no-tengo-tiempo {
+    width: 40vw;
+  }
+  .project-timesapp {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+  }
+
+  /*----Brunzit----*/
+  .project-brunzit {
+    margin: 0;
+    padding: 5px;
+    align-self: center;
+  }
+}
