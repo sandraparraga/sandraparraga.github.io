@@ -485,6 +485,12 @@ h6 {
     margin: 10vh 8vw;
     width: 100%;
   }
+  
+    .camara {
+    max-width: 80vw;
+    align-self: center;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 758px) {
