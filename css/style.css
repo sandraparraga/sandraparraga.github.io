@@ -99,8 +99,10 @@ button,
 .button {
   width: 170px;
   padding: 5px;
-  border-radius: 1vw;
-  background-color: #f886e5;
+  color: #141414;
+  font-weight: 800;
+  border-radius: 10px;
+  background-color: #f7ffc5;
   margin-top: 5px;
   height: 35px;
 }
@@ -169,7 +171,7 @@ input {
 /*------------------CURRÍCULUM------------------*/
 .doscolumnas {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 60% 40%;
   grid-column-gap: 9%;
   padding: 50px 20% 0 20%;
 }
@@ -183,14 +185,23 @@ h3 {
   margin-bottom: 9px;
 }
 
-.curriculum {
-  font-family: "Montserrat", sans-serif;
+h6 {
+  font-family: Sprat;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 0.5em;
-  line-height: 1.4em;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 6px;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+  color: #f7ffc5;
+}
+
+.place {
+  font-size: 14px;
+
+  text-align: left;
 }
 
 /*------------------MENÚ------------------*/
@@ -214,9 +225,8 @@ h3 {
 }
 .nav-link:hover,
 .visiting {
-  font-style: bold;
-  font-weight: bold;
   font-weight: 600;
+  color: #f7ffc5;
 }
 .next-project {
   cursor: pointer;
@@ -423,6 +433,26 @@ h3 {
 
 .prev2:hover {
   content: url("../assets/flecha-i-b.png");
+}
+
+/*------------------SURVEILLANCE POWER------------------*/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  height: 75%;
 }
 
 /*------------------RESPONSIVE------------------*/
