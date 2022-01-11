@@ -455,6 +455,8 @@ h6 {
   height: 75%;
 }
 
+.camara{max-width:800px;}
+
 /*------------------RESPONSIVE------------------*/
 @media (max-width: 1250px) {
   .project-flex {
