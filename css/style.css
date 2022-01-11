@@ -455,7 +455,7 @@ h6 {
   height: 75%;
 }
 
-.camara{max-width:800px;}
+.camara{max-width:570px;}
 
 /*------------------RESPONSIVE------------------*/
 @media (max-width: 1250px) {
