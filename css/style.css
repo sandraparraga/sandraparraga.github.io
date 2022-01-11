@@ -168,6 +168,8 @@ input {
   text-align: center;
 }
 
+#studies{padding-top:none;}
+
 /*------------------CURRÍCULUM------------------*/
 .doscolumnas {
   display: grid;
