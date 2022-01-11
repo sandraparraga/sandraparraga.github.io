@@ -546,6 +546,8 @@ h6 {
   .doscolumnas {
     padding: 50px 8% 0 8%;
   }
+  
+  #studies{padding-top:none;}
 
   /*----rana plaza----*/
   .project-ranaplaza {
