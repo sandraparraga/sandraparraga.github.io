@@ -53,7 +53,7 @@ p {
   font-weight: normal;
   font-size: 0.42em;
   line-height: 1.4em;
-  text-align: center;
+  text-align: left;
 }
 p span {
   font-weight: 600;
@@ -167,8 +167,6 @@ input {
   line-height: 1.4em;
   text-align: center;
 }
-
-#studies{padding-top:none;}
 
 /*------------------CURRÍCULUM------------------*/
 .doscolumnas {
@@ -457,7 +455,9 @@ h6 {
   height: 75%;
 }
 
-.camara{max-width:570px;}
+.camara {
+  max-height: 600px;
+}
 
 /*------------------RESPONSIVE------------------*/
 @media (max-width: 1250px) {
@@ -489,8 +489,6 @@ h6 {
     margin: 10vh 8vw;
     width: 100%;
   }
-  
-
 }
 
 @media (max-width: 758px) {
@@ -546,8 +544,6 @@ h6 {
   .doscolumnas {
     padding: 50px 8% 0 8%;
   }
-  
-  #studies{padding-top:none;}
 
   /*----rana plaza----*/
   .project-ranaplaza {
@@ -604,9 +600,8 @@ h6 {
     padding: 5px;
     align-self: center;
   }
-  
-  /*----Surveillance Power----*/
-      .camara {
+
+  .camara {
     max-width: 80vw;
     align-self: center;
     padding: 5px;
