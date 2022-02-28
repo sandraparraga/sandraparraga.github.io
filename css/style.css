@@ -204,6 +204,10 @@ h6 {
   text-align: left;
 }
 
+#studiesh3 {
+  padding-top: 0;
+}
+
 /*------------------MENÚ------------------*/
 
 .header {
@@ -474,6 +478,10 @@ h6 {
   /* curriculum */
   .doscolumnas {
     grid-template-columns: auto;
+  }
+  
+  #studiesh3 {
+    padding-top: 1em;
   }
 }
 @media (max-width: 1090px) {
